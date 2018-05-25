@@ -29,7 +29,8 @@ namespace CZBK.ItcastOA.DAL
        public bool DeleteEntity(T entity)
         {
             Db.Entry<T>(entity).State = System.Data.EntityState.Deleted;
-            return Db.SaveChanges() > 0;
+            // return Db.SaveChanges() > 0;
+            return true;
         }
         /// <summary>
         /// 修改
@@ -39,7 +40,8 @@ namespace CZBK.ItcastOA.DAL
        public bool EditEntity(T entity)
         {
             Db.Entry<T>(entity).State = System.Data.EntityState.Modified;
-            return Db.SaveChanges() > 0;
+            // return Db.SaveChanges() > 0;
+            return true;
         }
         /// <summary>
         /// 查询
