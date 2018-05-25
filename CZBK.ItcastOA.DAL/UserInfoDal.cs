@@ -9,7 +9,7 @@ using CZBK.ItcastOA.Model;
 
 namespace CZBK.ItcastOA.DAL
 {
-    public class UserInfoDal : BaseDal<UserInfo>, IUserInfoDAL
+    public class IUserInfoDal : BaseDal<UserInfo>, IUserInfoDAL
     {
        //实现自己特有的方法
     }

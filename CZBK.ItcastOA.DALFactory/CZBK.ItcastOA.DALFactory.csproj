@@ -40,7 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBSession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CZBK.ItcastOA.DAL\CZBK.ItcastOA.DAL.csproj">
+      <Project>{10df4e3d-5e73-402e-9248-4ede0cd77937}</Project>
+      <Name>CZBK.ItcastOA.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CZBK.ItcastOA.IDAL\CZBK.ItcastOA.IDAL.csproj">
+      <Project>{846f98ee-fc74-404b-af2c-f0bf5087cff0}</Project>
+      <Name>CZBK.ItcastOA.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CZBK.ItcastOA.Model\CZBK.ItcastOA.Model.csproj">
+      <Project>{e8c44294-24f1-4fb9-87c4-ca514cd237ab}</Project>
+      <Name>CZBK.ItcastOA.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
